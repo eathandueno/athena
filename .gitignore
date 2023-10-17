@@ -1,0 +1,26 @@
+# Byte-compiled / optimized files
+__pycache__/
+*.pyc
+*.pyo
+
+# Windows-specific files
+Thumbs.db
+ehthumbs.db
+
+# Directory containing package metadata
+*.egg-info/
+
+# Built distribution files
+dist/
+
+# Build artifacts
+build/
+
+# Ignore the 'myenv' folder
+myenv/
+
+# Ignore the 'cuda' folder
+cuda/
+
+# Ignore the '.ipynb_checkpoints' folder
+.ipynb_checkpoints/
