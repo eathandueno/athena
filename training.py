@@ -217,7 +217,7 @@ class GPTLanguageModel(nn.Module):
 
 model = GPTLanguageModel(vocab_size)
 print('loading model parameters...')
-with open('model-01.pk1', 'rb') as f:
+with open('model-01.pkl', 'rb') as f:
     model = pickle.load(f)
 print('loaded successfully')
 m = model.to(device)

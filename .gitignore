@@ -2,7 +2,8 @@
 __pycache__/
 *.pyc
 *.pyo
-
+openwebtext.tar.xz
+openwebtext/
 # Windows-specific files
 Thumbs.db
 ehthumbs.db
