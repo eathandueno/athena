@@ -7,7 +7,10 @@ openwebtext/
 # Windows-specific files
 Thumbs.db
 ehthumbs.db
-
+vocab.txt
+output_val.txt
+output_train.txt
+model-01.pkl
 # Directory containing package metadata
 *.egg-info/
 

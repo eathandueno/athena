@@ -34,7 +34,7 @@ encode = lambda s: [string_to_int[c] for c in s]
 decode = lambda l: ''.join([int_to_string[i] for i in l])
 
 def get_random_chunk(split):
-    filename = "train_split.txt" if split == 'train' else 'val_split.txt'
+    filename = "output_train.txt" if split == 'train' else 'output_val.txt'
     with open(filename, 'rb') as f:
         with mmap.mmap(f.fileno(), 0, access=mmap.ACCESS_READ) as mm:
             file_size = len(mm)
