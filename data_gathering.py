@@ -3,12 +3,10 @@
 from bs4 import BeautifulSoup
 import requests
 from newspaper import Article
-import praw
 import nltk
 from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
 import json
-import schedule
 import time
 import re
 
@@ -71,7 +69,8 @@ while True:
     if choice == '1':
         raw_data = fetch_data_from_url()
         if raw_data:
-            fetch_and_save_natural_language('https://chat.openai.com/c/085f814e-311f-4e91-b515-0afa9d47ae40', 'cleaned_data_nlp.txt')
+            url = input("Enter the intended URL")
+            fetch_and_save_natural_language(url, 'cleaned_data_nlp.txt')
             print("Cleaned data has been saved to 'cleaned_data.txt'")
     else:
         break
